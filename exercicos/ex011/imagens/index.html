@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Tente abir esse site em ´varios dispositivos diferentes ou simpletemten eumente e diminua o tamanho so seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="p.png" 
+        type="image/png">
+        <source media="(max-width:1050px)" srcset="m.png" 
+        type="image/png">
+        <img src="g.png" alt="Imegme flexivel">
+    </picture>
+
+    <h1>Reprosuzindo ádios</h1>
+    <audio src="../midia/Two Moons - Bobby Richards.mp3" controls ></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="../midia/The World's Fair - Godmode.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
